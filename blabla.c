@@ -41,12 +41,11 @@ int main() {
 					    count++;
 				    }
 			    }
+		    if (count > best) best = count;
+		    count = 0;
         	}
         }
     }
-    if (count1 > best){
-    	best = count1;
-	}
 	
     printf("max # of points are collinear is %d", count);
     return 0;
